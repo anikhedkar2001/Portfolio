@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <div id="about">
+        <div class="container">
+            <h4><a href="index.html">Home</a></h4>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Photos/Aniket Photo Passport.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Computer Engineering student, Web developer & also Software developer. Currently working on different web applications, Some projects are pushed on github you can get link on my home page. Acquiring knowledge from different platform to develope skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Development</span><br>HTML | CSS | JavaScript | Bootstrap</li>
+                            <li><span>Core Java</span><br>OOPS Concept | DSA | Programming</li>
+                            <li><span>Database Management</span><br>RDBMS | SQL | MySQL</li>
+                            <li><span>WordPress</span><br>Webpages | Templates | Web-Design</li>
+                            <li><span>Communication</span><br>Marathi | Hindi | English</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>April 2023-May 2023 | Part-time</span><br>Web Development and Designing Internship
+                                @ Oasis Infobyte
+                                <br>&emsp; - Worked on Personal portfolio website.
+                                <br>&emsp; - Used HTML, CSS, JavaScript, Bootstrap.
+                            </li>
+                            <li><span>April 2023-May 2023 | Part-time</span><br>Web Development Internship @ Cascode
+                                <br>&emsp; - Worked on Crypto tracker website.
+                                <br>&emsp; - Used HTML, CSS, JavaScript.
+                            </li>
+                            <li><span>February 2023-March 2023 | Part-time</span><br>Web Development and Designing
+                                Internship @ The Spark Foundation <br>&emsp; - Worked on Coding Language Survey Form.<br>
+                                &emsp; - Used HTML & CSS.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>PDEA's COE, Pune | SPPU<br>BE Pursuing, Computer
+                                Engineering.<br>8.43 SGPA (TE)</li>
+                            <li><span>2019-2020</span><br>Arts, Commerce & Science Junior College, Khed, Pune.<br>HSC |
+                                64.46% <br></li>
+                            <li><span>2017-2018</span><br>Dnyanwardhini Vidyalaya, Chakan, Khed, Pune.<br>SSC | 83%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="resume">
+                    <button class="btn" onclick="downloadResume()"><a href="">Download Resume</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>

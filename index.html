@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="left">Aniket's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html" >Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi, My name is <span class="purple">Aniket Khedkar</span>
+            <div>and I am a passionate</div>
+            <span id="element"></span>
+            <div class="links" style="display: block ruby;">
+                <div><a href="https://www.linkedin.com/in/aniket-khedkar-771308270" target="_blank"><img src="Photos/linkedin.png" alt="" width="50px"></a></div>
+                <div><a href="https://github.com/anikhedkar2001" target="_blank"><img src="Photos/github.png" alt="" width="50px"></a></div>
+                <div><a href="https://instagram.com/ani_khedkar_2001?igshid=NGExMmI2YTkyZg==" target="_blank"><img src="Photos/instagram.png" alt="" width="50px"></a></div>
+                <div><a href="https://www.facebook.com/aniket.khedkar.940?mibextid=ZbWKwL" target="_blank"><img src="Photos/facebook.png" alt="" width="50px"></a></div>
+            </div>
+        </div>
+    
+        <div class="rightSection">
+            <img src="Photos/ani.jpg" alt="">
+        </div>
+    </section>
+</main>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Computer Engineer', 'Web Developer', 'Software Developer'],
+      typeSpeed: 60,
+    });
+  </script>
+</body>
+
+</html>
